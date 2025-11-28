@@ -15,7 +15,7 @@ import re
 
 string = input()
 
-pattern = r"\b[a-zA-Z0-9]+(?:[._-][a-zA-Z0-9]+)*@[a-zA-Z]+(?:-?[a-zA-Z]+)*(?:\.[a-zA-Z]+(?:-?[a-zA-Z]+)+)+\b"
+pattern = r"\b[a-zA-Z0-9]+(?:[._-][a-zA-Z0-9]+)*@[a-zA-Z]+(?:-[a-zA-Z]+)*(?:\.[a-zA-Z]+(?:[a-zA-Z]+)+)+\b"
 
 matches = re.findall(pattern, string)
 
